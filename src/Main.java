@@ -69,8 +69,8 @@ void main() {
     System.out.println(standingPlaces);
     int occupiedSeats = 0;
     if (occupiedSeats < totalCapacity) {
-     if (occupiedSeats < sittingSeats)
-         System.out.println("There is a free seat available");
+        if (occupiedSeats < sittingSeats)
+            System.out.println("There is a free seat available");
     }else{
         System.out.println("There is a free standing place");
     }
@@ -92,7 +92,7 @@ void main() {
             System.out.println("largestNumber" + two);
 
         }
-        }
     }
+}
 
 
