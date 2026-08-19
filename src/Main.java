@@ -17,31 +17,32 @@ void main() {
     int age = 17;
     if (age >= 18) {
         System.out.println("The person is 18 years old or older");
-    } else {
-        System.out.println("Hasn't reached the age of majority, so we need to wait");
+    }else {
+        System.out.println("The age of majority hasn’t been reached yet; we need to wait a little longer.");
     }
 
-    int temperature = 0;
+
+    int temperature = 10;
     if (temperature < 5) {
-        System.out.println("\n" + "It's cold outside, you need to put on a hat.");
+        System.out.println( "It's cold outside, you need to put on a hat.");
     } else {
         System.out.println("Today is warm, so you can go without a hat.");
     }
 
-    int speed = 50;
+    int speed = 150;
     if (speed <= 60) {
         System.out.println("There is no speeding, you can drive safely");
     } else {
         System.out.println("If the speed limit is exceeded, you will have to pay a fine.");
     }
 
-    int age1 = 5;
+    int age1 = 40;
     if (age1 >= 2 && age1 <= 6) {
         System.out.println("Need go kindergarten");
     } else {
         System.out.println("No need go kindergarten");
     }
-    int age2 = 10;
+    int age2 = 25;
     if (age2 >= 7 && age2 <= 17) {
         System.out.println("Need go school");
     } else {
@@ -54,7 +55,7 @@ void main() {
         System.out.println("GO Work!");
     }
 
-    int age4 = 16;
+    int age4 = 70;
     if (age4 >= 5 && age4 <= 14) {
         System.out.println("It is possible with an accompanying person");
     } else if (age4 < 5) {
