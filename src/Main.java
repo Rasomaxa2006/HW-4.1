@@ -63,36 +63,37 @@ void main() {
     int standingPlaces = (totalCapacity - sittingSeats);
     System.out.println(standingPlaces);
     int occupiedSeats = 0;
-    if (occupiedSeats < totalCapacity) {
+    if (totalCapacity < occupiedSeats) {
         System.out.println("There are places");
-    }else if (occupiedSeats < sittingSeats) {
-    System.out.println("There is a free seat available");
-    }else  {
+    } else if (sittingSeats < occupiedSeats) {
+        System.out.println("There is a free seat available");
+    } else {
         System.out.println("There is a free standing place");
     }
 
 
-
-
-
-
-
-    int one = 15;
-    int two = 6;
-    int three = 9;
-    if (one > two) {
-        if (two < three) {
-            System.out.println("largestNumber " + one);
-        } else System.out.println("largestNumber " + two);
-
-    } else {
-        if (three > two) {
-            System.out.println("largestNumber " + three);
-        } else {
-            System.out.println("largestNumber " + two);
-
-        }
+    int one = 3975;
+    int two = 1750;
+    int three = 2545;
+    if (one > two && one > three) {
+        System.out.println("largestNumber " + one);
+    } else if (three > two && three > one) {
+        System.out.println("largestNumber " + three);
+    } else if (two > three) {
+        System.out.println("largestNumber " + two);
+    } else if (three > one) {
+        System.out.println("largestNumber " + three);
+    }else if (two > one){
+        System.out.println("largestNumber " + two);
+    }else if (one > three ) {
+        System.out.println("largestNumber " + one);
     }
+
+
+
+
+
+
 }
 
 
