@@ -18,43 +18,36 @@ void main() {
     if (age >= 18) {
         System.out.println("The person is 18 years old or older");
     } else {
-        System.out.println("Hasn't reached the age of majority, so we need to wait");
+        System.out.println("The age of majority hasn’t been reached yet; we need to wait a little longer.");
     }
 
-    int temperature = 0;
+
+    int temperature = 10;
     if (temperature < 5) {
-        System.out.println("\n" + "It's cold outside, you need to put on a hat.");
+        System.out.println("It's cold outside, you need to put on a hat.");
     } else {
         System.out.println("Today is warm, so you can go without a hat.");
     }
 
-    int speed = 50;
+    int speed = 150;
     if (speed <= 60) {
         System.out.println("There is no speeding, you can drive safely");
     } else {
         System.out.println("If the speed limit is exceeded, you will have to pay a fine.");
     }
 
-    int age1 = 5;
+    int age1 = 34;
     if (age1 >= 2 && age1 <= 6) {
         System.out.println("Need go kindergarten");
-    } else {
-        System.out.println("No need go kindergarten");
-    }
-    int age2 = 10;
-    if (age2 >= 7 && age2 <= 17) {
+    } else if (age1 >= 7 && age1 <= 17) {
         System.out.println("Need go school");
-    } else {
-        System.out.println("No need go School");
-    }
-    int age3 = 33;
-    if (age3 >= 18 && age3 <= 24 || age3 < 24) {
+    } else if (age1 >= 18 && age1 <= 24) {
         System.out.println("Need go university");
     } else {
         System.out.println("GO Work!");
     }
 
-    int age4 = 16;
+    int age4 = 50;
     if (age4 >= 5 && age4 <= 14) {
         System.out.println("It is possible with an accompanying person");
     } else if (age4 < 5) {
@@ -64,33 +57,43 @@ void main() {
     }
 
     int totalCapacity = 102;
+    System.out.println(totalCapacity);
     int sittingSeats = 60;
+    System.out.println(sittingSeats);
     int standingPlaces = (totalCapacity - sittingSeats);
     System.out.println(standingPlaces);
     int occupiedSeats = 0;
-    if (occupiedSeats < totalCapacity) {
-     if (occupiedSeats < sittingSeats)
-         System.out.println("There is a free seat available");
-    }else{
+    if (totalCapacity < occupiedSeats) {
+        System.out.println("There are places");
+    } else if (sittingSeats < occupiedSeats) {
+        System.out.println("There is a free seat available");
+    } else {
         System.out.println("There is a free standing place");
     }
 
 
-
-    int one = 1;
-    int two = 2;
-    int three = 3;
-    if (one > two) {
-        if (two > three) {
-            System.out.println("largestNumber" + one);
-        } else System.out.println("largestNumber" + two);
-
-    } else {
-        if (three > two) {
-            System.out.println("largestNumber " + three);
-        } else {
-            System.out.println("largestNumber" + two);
-
-        }
-        }
+    int one = 3975;
+    int two = 1750;
+    int three = 2545;
+    if (one > two && one > three) {
+        System.out.println("largestNumber " + one);
+    } else if (three > two && three > one) {
+        System.out.println("largestNumber " + three);
+    } else if (two > three) {
+        System.out.println("largestNumber " + two);
+    } else if (three > one) {
+        System.out.println("largestNumber " + three);
+    }else if (two > one){
+        System.out.println("largestNumber " + two);
+    }else if (one > three ) {
+        System.out.println("largestNumber " + one);
     }
+
+
+
+
+
+
+}
+
+
